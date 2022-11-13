@@ -1,0 +1,30 @@
+﻿[05/10/22 22:15:25] info: Program: Starting Squirrel Updater: --updateSelf=C:\Users\柏昌意cycle\AppData\Local\SquirrelTemp\Update.exe
+[05/10/22 22:15:25] info: Program: About to wait for parent PID 22728
+[05/10/22 22:15:40] fatal: Finished with unhandled exception: System.AggregateException: 发生一个或多个错误。 ---> System.IO.IOException: 文件“C:\Users\柏昌意cycle\AppData\Local\atom\app-1.60.0\..\Update.exe”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Squirrel.Update.Program.<>c__DisplayClass6_0.<UpdateSelf>b__0()
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Squirrel.Update.Program.<UpdateSelf>d__6.MoveNext()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   在 System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   在 Squirrel.Update.Program.executeCommandLine(String[] args)
+   在 Squirrel.Update.Program.main(String[] args)
+---> (内部异常 #0) System.IO.IOException: 文件“C:\Users\柏昌意cycle\AppData\Local\atom\app-1.60.0\..\Update.exe”正由另一进程使用，因此该进程无法访问此文件。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   在 System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   在 Squirrel.Update.Program.<>c__DisplayClass6_0.<UpdateSelf>b__0()
+   在 System.Threading.Tasks.Task.InnerInvoke()
+   在 System.Threading.Tasks.Task.Execute()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Squirrel.Update.Program.<UpdateSelf>d__6.MoveNext()<---
+
